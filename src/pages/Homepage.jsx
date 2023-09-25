@@ -3,9 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCoinsStatus, fetchCoins, filterInputValue } from './../redux/slices/coinSlice';
 import { FilterList } from './../components/FilterList/FilterList';
 import { Header } from './../components/Header/Header';
-import { Navigate } from 'react-router-dom';
-import { useAuth } from 'hooks/useAuth';
-import { removeUser } from 'redux/slices/userSlice';
+
 import { Paginate } from 'components/Paginate/Paginate';
 const Homepage = () => {
   const coinsStatus = useSelector(getCoinsStatus);
@@ -34,15 +32,14 @@ const Homepage = () => {
       setItems(filteredItems);
     }
   }, [coins, search]);
-  
-  const {isAuth, email} = useAuth();
-  return isAuth?(
+
+  return (
   <>
-    <Header email={email}/>
+    <Header />
     <FilterList/>
     <Paginate itemsPerPage={10} items={items}/>
   </>
-  ):(<Navigate to='/login'/>)
+  )
 };
 
 export default Homepage;
