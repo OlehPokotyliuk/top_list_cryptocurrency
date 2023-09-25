@@ -1,0 +1,12 @@
+.loginPage{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  a{
+    color: #13c0ff;
+    &:hover, &:active{
+      color: #c3dee8;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.paginate{
+  background: #fff;
+  ul{
+    width: 50vw;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    li a {
+      border-radius: 7px;
+      padding: 7px 15px;
+      border: gray 1px solid;
+      cursor: pointer;
+    }
+    li.active a {
+      background-color: #0366d6;
+      color: white;
+      min-width: 32px;
+    }
+    li.disabled a {
+      color: grey;
+    }
+    li.disable,
+    li.disabled a {
+      cursor: default;
+    }
+  }
+}

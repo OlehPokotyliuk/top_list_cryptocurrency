@@ -1,0 +1,86 @@
+.filterList{
+  display: flex;
+  background: #fff;
+  width: 100vw;
+  height: 50px;
+  align-items: center;
+  min-width: 280px;
+  a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    &:hover, &:active{
+      color: green;
+    }
+  }
+}
+.coinsName{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  span{
+    margin-left: 50px;
+  }
+};
+.coinsPrice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coinsName,.coinsPrice, .changeHour,.changeDay, .marketCap,.circulationSupply, .volume{
+  width: 14.5%;
+};
+
+@media (max-width: 1200px) {
+  .volume{
+    display: none;
+  }
+  .coinsName,.coinsPrice, .changeHour,.changeDay, .marketCap,.circulationSupply{
+    width: 16.66%;
+    align-items: center;
+    display: flex;
+  };
+}
+@media (max-width: 768px) {
+  .circulationSupply ,.volume{
+    display: none;
+  }
+  .coinsName,.coinsPrice, .changeHour,.changeDay, .marketCap{
+    width: 20%;
+    align-items: center;
+    display: flex;
+  };
+}
+@media (max-width: 728px) {
+  .circulationSupply ,.volume, .marketCap{
+    display: none;
+  }
+  .coinsName,.coinsPrice, .changeHour,.changeDay{
+    width: 25%;
+    align-items: center;
+    display: flex;
+  };
+}
+
+@media (max-width: 632px) {
+  .circulationSupply ,.volume, .marketCap,.changeDay{
+    display: none;
+  }
+  .coinsName,.coinsPrice, .changeHour{
+    width: 33.3%;
+    align-items: center;
+    display: flex;
+  };
+}
+
+@media (max-width: 466px) {
+  .circulationSupply ,.volume, .marketCap,.changeDay, .changeHour{
+    display: none;
+  }
+  .coinsName,.coinsPrice{
+    width: 50%;
+    align-items: center;
+    display: flex;
+  };
+}
