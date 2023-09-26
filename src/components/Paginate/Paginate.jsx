@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactPaginate from 'react-paginate';
-import classes from './Paginate.module.scss';
+import classes from './Paginate.module.scss'
 const { CoinsList } = require("components/CoinsList/CoinsList");
 
 export const Paginate =  ({ itemsPerPage, items}) =>{
@@ -16,17 +16,25 @@ export const Paginate =  ({ itemsPerPage, items}) =>{
   };
 
   return (
-    <div className={classes.paginate}>
+    <div className='paginate'>
       <CoinsList currentItems={currentItems} />
       <ReactPaginate
-        previousLabel="previous"
-        nextLabel="next"
+        previousLabel={classes.Previous}
+        nextLabel={classes.Next}
+        pageClassName={classes.pageItem}
+        pageLinkClassName={classes.pageLink}
+        previousClassName={classes.pagePrevious}
+        previousLinkClassName={classes.pagePreviousLink}
+        nextClassName={classes.pageNext}
+        nextLinkClassName={classes.pageNextLink}
         breakLabel="..."
+        breakClassName={classes.pageItem}
+        breakLinkClassName={classes.pageLink}
         pageCount={10}
         pageRangeDisplayed={4}
         marginPagesDisplayed={2}
         onPageChange={handlePageClick}
-        activeClassName={classes.active}
+        activeClassName={classes.activeLink}
       />
     </div >
   );

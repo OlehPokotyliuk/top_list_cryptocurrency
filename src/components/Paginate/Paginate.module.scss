@@ -1,29 +1,53 @@
-.paginate{
-  background: #fff;
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 50vw;
+  width: 50vw;
+  margin: 10px auto;
+  padding: 0;
+  position: relative;
+.pageItem,.pageNext, .pagePrevious{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .activeLink{
+    background: #3338db;
+    &:hover, &:active{
+      background: #3338db;
+    }
+  }
+  
+  .pageLink,.pageNextLink,.pagePreviousLink {
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover, &:active{
+      background: #4e87cb;
+    }
+  }
+}
+}
+
+
+@media (max-width: 644px) {
   ul{
-    width: 50vw;
+    justify-content: space-evenly;
+    min-width: 70vw;
+    
+  .pageLink{
+    display: none;
+  }
+  .pagePreviousLink,.pageNextLink{
     display: flex;
-    list-style: none;
-    justify-content: center;
     align-items: center;
-    width: 100vw;
-    li a {
-      border-radius: 7px;
-      padding: 7px 15px;
-      border: gray 1px solid;
-      cursor: pointer;
-    }
-    li.active a {
-      background-color: #0366d6;
-      color: white;
-      min-width: 32px;
-    }
-    li.disabled a {
-      color: grey;
-    }
-    li.disable,
-    li.disabled a {
-      cursor: default;
-    }
+    justify-content: center;
+    width: 100px;
+  }
+  .pageNextLink{
+    width: 110px;
+  }
   }
 }
