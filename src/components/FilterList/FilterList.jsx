@@ -25,7 +25,7 @@ export const FilterList = () => {
   }
   return (
     <div className={classes.filterList}>
-      <Link className={classes.coinsName}><span data-value="id" onClick={(e)=>linkHandler(e)}>Id: </span></Link>
+      <Link className={classes.coinsName}><span data-value="id" onClick={(e)=>linkHandler(e)}> </span></Link>
       <Link className={classes.coinsPrice}><span data-value="PRICE" onClick={(e)=>linkHandler(e)}>Price ($) : </span></Link>
       <Link className={classes.changeHour}><span data-value="CHANGEHOUR" onClick={(e)=>linkHandler(e)}>1h: </span></Link>
       <Link className={classes.changeDay}><span data-value="CHANGE24HOUR" onClick={(e)=>linkHandler(e)}>24h: </span></Link>

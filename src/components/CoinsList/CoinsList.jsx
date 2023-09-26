@@ -3,6 +3,7 @@ import classes from './CoinsList.module.scss';
 import { useSelector } from 'react-redux';
 
 export const CoinsList = ({currentItems}) => {
+  
   return (
     <div className={classes.coinsWrapper}>
       {currentItems&&
