@@ -4,9 +4,8 @@ import { addSearchValue, clearInput, selectorOption } from './../../redux/slices
 import debounce from 'lodash.debounce';
 import classes from './Header.module.scss'
 import { Link } from 'react-router-dom';
-import Logout from './LogOut/Logout';
 
-export const Header = ({email}) => {
+export const Header = () => {
   let [inputValue, setInputValue] = useState('');
   const cryptoItemsList = useSelector(state=>state.coins.filterItems); 
 
@@ -43,7 +42,6 @@ export const Header = ({email}) => {
         </div>
         {cryptoItemsList !== 100 ?<p className={classes.paragraph}>Найдено <span>{cryptoItemsList}</span> елементов</p> : ' '}
       </div>
-      <Logout email={email}/>
     </div>
   );
 };
