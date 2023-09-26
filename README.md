@@ -1,6 +1,9 @@
+## top 100 cryptocurrency list
+![project screen](https://prnt.sc/ZnoYvOiIQEpi)
 The project was created to quickly view the list of top 100 cryptocurrencies.
 Adapted for mobile devices and tablets.
-For writing I used: 1. react
+For writing I used: 
+1. react
 2. redux
 3. axios
 4. lodash.debounce.
