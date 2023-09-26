@@ -1,5 +1,5 @@
 ## top 100 cryptocurrency list
-![project screen](https://prnt.sc/ZnoYvOiIQEpi)
+![project screen](https://prnt.sc/ZnoYvOiIQEpi?raw=true)
 The project was created to quickly view the list of top 100 cryptocurrencies.
 Adapted for mobile devices and tablets.
 For writing I used: 
