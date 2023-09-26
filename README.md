@@ -1,7 +1,7 @@
 ## top 100 cryptocurrency list
 ![project screen](https://i.imgur.com/YmI6Hqh.png)
 The project was created to quickly view the list of top 100 cryptocurrencies.  
-Adapted for mobile devices and tablets.  
+Adapted for mobile devices and tablets.    
 For writing I used: 
 1. react
 2. redux
